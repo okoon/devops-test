@@ -1,0 +1,12 @@
+name: CI for "Test" keyword
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  run-commands:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "test branch"
